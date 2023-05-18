@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="effportfolio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;600;700;800;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Jquery needed -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(window).ready(function(){
+    	$('.navTrigger').on('click',function() {
+        $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+	});
+});
+    </script>
+     
+    
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(document).scroll(function (){
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+		
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- NAVBAR -->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="effportfolio.html">elizabeth fernandez</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="effportfolio.html#work">work</a></li>
+                    <li><a href="effportfolio.html#about">about</a></li>
+                    <li><a href="effportfolio.html#contact">contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="hero-img1"></section>
+<div class="projct">
+	
+	<div class="work2">
+		<div class="title pro-pos">
+			cookbook recipes
+		</div>
+		<div class="type-art">
+			graphic design
+		</div>
+		<div class="description">
+			<p>
+				These recipe chapters were made for my Electronic Design 1 class, where we were tasked with creating the visuals and design of two recipes of our choice. I chose two desserts that are part of my culture because I wanted to visualize the process of making them and their final look. In Dominican culture, Flan and Arroz con Leche are very popular desserts. Using Illustrator, I drew all the ingredients in each recipe and the final look of the food as well. 
+			</p>
+		</div> 
+		<div class="media">
+			software:
+			<p>Indesign, Illustrator.</p>
+		</div>
+	</div>
+	<div class="details">
+		<div class="d-img1 prImg shadow">
+			<img src="images/cookbook1.png">
+		</div>
+		<div class="description2">
+			<p>
+				For the illustrations, I drew them by hand first and then brought them into illustrator to edit them. I changed the outlines from black to white so they would stand out more and blend well with the image of the book. For both recipes, I created a drip-like background, with the specific color of each dessert, to compliment the spread. 
+			</p>
+			
+		</div>
+
+		
+		<div class="drawing1 shadow">
+			<img src="images/flan1.png">
+		</div>
+		<div class="drawing2 shadow">
+			<img src="images/flan2.png">
+		</div>
+		<div class="drawing3 shadow">
+			<img src="images/flan3.png">
+		</div>
+		<div class="drawing4 shadow">
+			<img src="images/flan4.png">
+		</div>
+		<div class="drawing5 shadow">
+			<img src="images/flan5.png">
+		</div>
+		<div class="drawing6 shadow">
+			<img src="images/flan6.png">
+		</div>
+		<div class="drawing7 shadow">
+			<img src="images/flan7.png">
+		</div>
+
+		<div class="d-img2 prImg shadow">
+			<img src="images/cookbook2.png">
+		</div>
+		<div class="description3">
+			<p>
+				For the typefaces, I chose a more handwritten font for the titles, with Relation in bold; For the body I decided to go with a sans-serif to make it legible and modern, using Fira Sans. Another typeface I used exclusively for the numbers was Memimas Pro, which is a dotted typeface, that gives the spreads a more playful feeling and adds to the styling of the spreads.
+			</p>
+			
+		</div>
+
+		<div class="nd-drawing1 shadow">
+			<img src="images/arroz1.png">
+		</div>
+		<div class="nd-drawing2 shadow">
+			<img src="images/arroz2.png">
+		</div>
+		<div class="nd-drawing3 shadow">
+			<img src="images/arroz3.png">
+		</div>
+		<div class="nd-drawing4 shadow">
+			<img src="images/arroz4.png">
+		</div>
+		<div class="nd-drawing5 shadow">
+			<img src="images/arroz5.png">
+		</div>
+		<div class="nd-drawing6 shadow">
+			<img src="images/arroz6.png">
+		</div>
+		<div class="nd-drawing7 shadow">
+			<img src="images/arroz7.png">
+		</div>
+		<div class="nd-drawing8 shadow">
+			<img src="images/flan2.png">
+		</div>
+		<div class="nd-drawing9 shadow">
+			<img src="images/flan5.png">
+		</div>
+		<div class="nd-drawing10 shadow">
+			<img src="images/arroz8.png">
+		</div>
+
+
+		
+	</div>
+
+
+</div>
+</body>
+</html>

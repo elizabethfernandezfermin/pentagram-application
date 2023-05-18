@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="effportfolio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;600;700;800;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Jquery needed -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(window).ready(function(){
+    	$('.navTrigger').on('click',function() {
+        $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+	});
+});
+    </script>
+     
+    
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(document).scroll(function (){
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+		
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- NAVBAR -->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="effportfolio.html">elizabeth fernandez</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="effportfolio.html#work">work</a></li>
+                    <li><a href="effportfolio.html#about">about</a></li>
+                    <li><a href="effportfolio.html#contact">contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="hero-img3"></section>
+<div class="projct">
+	
+	<div class="work2">
+		<div class="title pro-pos">
+			princess diana documentary
+		</div>
+		<div class="type-art">
+			web design
+		</div>
+		<div class="description">
+			<p>
+				For this project given in my Web Design 2 class, we were tasked with choosing someone who we wanted to do a magazine-style website documentary about, including sections and making it responsive. I chose to focus on the late Princess Diana, highlighting important milestones of her life. I coded the website using Bootstrap Studio and edited the images to be website friendly using Photoshop. The text about the life of Diana comes from the Britannica and Insider website, while the images are sourced to them as well as Harpers Baazar and T&Country Mag.			</p>
+		</div>
+		<div class="media">
+			software:
+			<p>Bootstrap, Photoshop</p>
+			<a href="https://diana-documentary.bss.design">visit the website!</a>
+		</div>
+	</div>
+	<div class="details">
+		<div class="d-img1 prImg">
+			<img src="images/documentary1.png">
+		</div>
+		<div class="description-web2">
+			<p>
+				The sections are broken up into four sections: Early Life, Royal Life, Social Impact, and Tragic Death. It felt like the best way to describe the life of Princess Diana, showcasing all the important times of her life. In terms of design, I wanted to be a clean site, as I chose my main colors as black white, and blue. I decorated the titles with specific borders using the blue or white color and lines for guidance in differentiating the sections.
+			</p>
+			
+		</div>
+		<div class="d-img2 prImg">
+			<img src="images/documentary2.png">
+		</div>
+		<div class="description-web3">
+			<p>
+				In terms of the body text organization, I chose two columns, sometimes becoming three with an image, added a drop cap to the beginning of the section, and included two quotes in different sections. For the fonts, I chose to use Space Grotesk for the body text and Helvetica for the main title and navbar links.
+			</p>
+			
+		</div>
+		<div class="d-img3 prImg">
+			<img src="images/documentary3.png">
+		</div>
+		<div class="d-img4 prImg">
+			<img src="images/documentary4.png">
+		</div>
+		<div class="d-img5 prImg">
+			<img src="images/documentary5.png">
+		</div>
+		<div class="d-img6 prImg">
+			<img src="images/documentary6.png">
+		</div>
+		<div class="web-link" scrolling="no">
+			<iframe class="frame" src="https://diana-documentary.bss.design"></iframe>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>
